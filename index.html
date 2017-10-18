@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Travel Reimbursement Calculator</title>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2hBG1cfcbJCQMdD3afKEhBtYUBYsuH8M"
+  type="text/javascript"></script>
+<script  src="js/index.js"></script>
 </head>
 
 <body>
   <h2>Travel Reimbursement Calculator</h2>
 <form id="distance_form">
     <label>Origin: </label>
-    <input id="origin" type="text" name="origin" list="frequentOrigins"/>
-    <br/>
-<datalist id="frequentOrigins">
-  <option value="100 Library Dr. Chapel Hill, NC">
-  <option value="405 Martin Luther King Jr Blvd. Chapel Hill, NC">
-</datalist>
-    <label>Destination: </label>
+    <input id="origin" type="text" name="origin" list="frequentLocations"/>&nbsp<label>Destination: </label>
     <input id="destination" type="text" name="destination"/>
     <br/>
     <input type="submit" value="Calculate"/>
@@ -38,9 +36,9 @@
         </div>
 	</div>
 </div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2hBG1cfcbJCQMdD3afKEhBtYUBYsuH8M"
-  type="text/javascript"></script>
-<script  src="js/index.js"></script>
+<datalist id="frequentLocations">
+  <option value="100 Library Dr. Chapel Hill, NC">
+  <option value="405 Martin Luther King Jr Blvd. Chapel Hill, NC">
+</datalist>
 </body>
 </html>
