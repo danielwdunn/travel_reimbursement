@@ -27,7 +27,7 @@ $(function() {
         var distance_value = distance.value;
         var distance_text = distance.text;
         var miles = distance_text.substring(0, distance_text.length - 3);
-        $('#result').html("It is " + miles + " miles from " + origin + " to " + destination);
+        $('#result').html("It is " + miles + " miles from " + origin + " to " + destination + " and you will be reimbursed $ "+  miles*0.25 );
       }
     }
   }
