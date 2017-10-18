@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Google Maps Distance Matrix Example</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+  <h2>Distance Between two Addresses</h2>
+<form id="distance_form">
+    <label>Origin: </label>
+    <input id="origin" type="text" name="origin"/>
+    <br/>
+    <label>Destination: </label>
+    <input id="destination" type="text" name="destination"/>
+    <br/>
+    <input type="submit" value="Calculate"/>
+</form>
+<div id="result">
+</div>
+
+
+<br>
+<div class="container">
+	<div class="row">
+		<input type="hidden" name="count" value="1" />
+        <div class="control-group" id="fields">
+            <label class="control-label" for="field1">Nice Multiple Form Fields</label>
+            <div class="controls" id="profs"> 
+                <form class="input-append">
+                    <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Origin" data-items="8"/><button id="b1" class="btn add-more" type="button">+</button></div>
+                </form>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maps.googleapis.com/maps/api/js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
